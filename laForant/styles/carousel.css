@@ -1,0 +1,125 @@
+.carousel{
+    overflow: hidden;
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 383rem;
+}
+
+.slide{
+    width: 400rem;
+    display: flex;
+    background-color: var(--slidePurple);
+    margin: 5rem;
+    padding: 3.5rem;
+    border-radius: 5%;
+}
+
+.slide img{
+    width: auto;
+}
+
+.slideText{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slideText h1{
+    font-size: 4.5ch;
+}
+
+.slideText p{
+    font-size: 3.4ch;
+    font-weight: 700;
+}
+
+.slideText p:first-of-type{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.slideText button{
+    background-color: var(--buttonRed);
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 118.5px;
+    font-size: 2ch;
+    font-weight: 600;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;
+    margin-top: 2.5rem;
+}
+
+.slideText button:hover{
+    background-color: var(--textHover);
+}
+
+.fa-chevron-left{
+    position: absolute;
+    left: 6.5rem;
+    bottom: 12rem;
+    color: rgb(109, 109, 109);
+}
+
+.fa-chevron-right{
+    position: absolute;
+    right: 6.5rem;
+    bottom: 12rem;
+    color: rgb(109, 109, 109);
+}
+
+.fa-chevron-left:hover, .fa-chevron-right:hover{
+    color: rgb(170, 170, 170);
+}
+
+@media screen and (max-width: 800px){
+    .fa-chevron-right, .fa-chevron-left{
+        display: none;
+    }
+
+    .slide{
+        width: 35rem;
+        height: 13.5rem;
+    }
+
+    .slide img{
+        width: auto;
+    }
+    
+    .slideText{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .slideText h1{
+        font-size: 2ch;
+    }
+    
+    .slideText p{
+        font-size: 1.5ch;
+        font-weight: 700;
+    }
+
+    .slideText p:first-of-type{
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .slide img{
+        width: 40%;
+        height: min-content;
+    }
+
+    .slideText button{
+        width: 7rem;
+        font-size: 1.5ch;
+        margin-bottom: 6rem;
+        margin-top: 1rem;
+    }
+}

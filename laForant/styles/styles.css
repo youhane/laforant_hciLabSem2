@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+    --bgPurple: #2d2f59;
+    --bgSmall: #30314C;;
+    --navPurple: #150240;
+    --textHover: #F2B705;
+    --buttonRed: #610606;
+    --textBtn: #C7C6C6;
+    --slidePurple: #25274F;
+    --cardBg: #494c7e;
+}
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s;
+}
+
+a, button{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--bgPurple);
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--navPurple);
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+
+.currPage{
+    color: var(--textHover);
+}
+
+/* icon */
+.big{
+    max-width: 15%;
+    min-width: 2%;
+    margin-left: 1rem;
+}
+
+.smol{
+    display: none;
+}
+
+nav ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 700;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+}
+
+nav ul li a{
+    font-size: 2ch;
+}
+
+nav ul li a:hover{
+    color: var(--textHover);
+}
+
+nav button{
+    display: none;
+}
+
+.dropMenu{
+    display: none;
+}
+
+.about, .map{
+    display: flex;
+    margin: 7rem;
+}
+
+.aboutText{
+    width: 60%;
+    margin-right: 10rem;
+}
+
+.mapText{
+    margin-left: 10rem;
+}
+
+.aboutText h1, .mapText h1{
+    text-transform: uppercase;
+    font-size: 7ch;
+}
+
+.aboutText hr, .mapText hr{
+   width: 70%;
+   height: .7rem;
+   background-color: white;
+}
+
+.mapText hr{
+    float: right;
+    width: 90%;
+}
+
+.aboutText p, .mapText p{
+    font-size: 3ch;
+    font-weight: 700;
+}
+
+.aboutText p:first-of-type, .mapText p:first-of-type{
+    margin: 4rem 0rem;
+}
+
+.aboutText button, .mapText button{
+    background-color: var(--navPurple);
+    border: none;
+    font-size: 2ch;
+    font-weight: 700;
+    border-radius: 21px;
+    display: flex;
+    padding: 1.4rem 10rem;
+    margin-top: 1.5rem;
+}
+
+.mapText button{
+    position: absolute;
+    right: 6rem;
+}
+
+.aboutText button:hover, .mapText button:hover{
+    background-color: rgba(28, 29, 71, 0.79);
+}
+
+.about1, .map1{
+    position: relative;
+    top: 5rem;
+    z-index: 10;
+    border-radius: 5%;
+    transition-duration: .1s;
+    filter: contrast(50%);
+}
+
+.map1{
+    left: 5rem;
+}
+
+.about2, .map2{
+    position: relative;
+    bottom: 3rem;
+    left: 10rem;
+    border-radius: 5%;
+    transition-duration: .1s;
+    filter: contrast(50%);
+}
+
+.map2{
+    left: 0;
+}
+
+.about1:hover, .about2:hover, .map1:hover, .map2:hover{
+    z-index: 15;
+    filter: contrast(100%);
+}
+
+.mapText{
+    text-align: right;
+}
+
+.agents{
+    display: flex;
+    flex-direction: column;
+}
+
+.agents .title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.agents .title h1{
+    font-size: 6ch;
+    text-align: center;
+}
+
+.agents .title hr{
+    width: 30rem;
+    height: .5rem;
+    background-color: white;
+}
+
+.agentContent{
+    display: flex;
+    margin: 3rem;
+}
+
+/* card */
+.agentLeft{
+    display: flex;
+    margin-left: 3rem;
+}
+
+.col{
+    margin: 0rem 2rem ;
+}
+
+.card{
+    background-color: var(--cardBg);
+    border-radius: 10%;
+    height: 26%;
+    margin-bottom: 2rem;
+    border-right: .7rem solid #373A6C;
+    border-top: .7rem solid #373A6C;
+    transform: all 3s;
+}
+
+.more{
+    border: none
+}
+
+.card:hover{
+    border: none;
+}
+
+.card img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.agentName{
+    position: relative;
+    background-color: hsla(0, 0%, 100%, 0.438);
+    bottom: 6rem;
+}
+
+.agentName p{
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+
+.card:hover{
+    filter: contrast(80%);
+    --tw-shadow: 0 25px 50px -12px rgba(255, 255, 255, 0.158);
+box-shadow: var(--tw-ring-offset-shadow, 0 0 #fff), var(--tw-ring-shadow, 0 0 #fff), var(--tw-shadow);
+}
+
+.card h2{
+    text-align: center;
+    padding-top: 50%;
+}
+
+
+/* text */
+.agentText{
+    text-align: right;
+    padding-left: 8rem;
+}
+
+.agentText{
+    width: 20%;
+}
+
+.agentText h1{
+    font-size: 5.5ch;
+}
+
+.agentText p{
+    font-size: 2.5ch;
+    font-weight: 600;
+}
+
+/* skills */
+.skills h1{
+    font-size: 2ch;
+}
+
+.skills p{
+    font-size: 1.4ch;
+    margin-top: .5rem;
+}
+
+.skill{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.skill img{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+#big{
+    display: flex;
+}
+
+.small{
+    display: none;
+}
+
+.sys-title{
+    font-size: 3.5ch;
+    text-align: center;
+}
+
+.sys-title hr{
+    position: relative;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    height: .6rem;
+    background-color: white;
+    margin-top: 1rem;
+}
+
+.reqs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.square{
+    background-color: var(--cardBg);
+    padding: 2rem 2rem 3rem 2rem;
+    border-radius: 10%;
+}
+
+.square h1{
+    text-align: center;
+    font-size: 4ch;
+}
+
+.square p{
+    font-weight: 600;
+    padding-top: 2rem;
+    padding-right: 9rem;
+    font-size: 2.3ch;
+}
+
+footer {
+    display: flex;
+    background-color: #25274A;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.social{
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+.mid{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+footer button{
+    background-color: var(--buttonRed);
+    border: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 1rem 2rem;
+    font-size: 2.2ch;
+    border-radius: 25rem;
+}
+
+footer button:hover{
+    background-color: var(--textHover);
+}
+
+body section{
+    margin-top: 4rem;
+    margin-bottom: 4re;
+}
+
+body section:first-of-type{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+@media screen and (max-width: 800px){
+    nav{
+        justify-content: space-between;
+    }
+    .big{
+        display: none;
+    }
+    .smol{
+        display: flex;
+        max-width: 10%;
+        min-width: 2%;
+        margin-top: .4rem;
+    }
+    nav ul{
+        display: none;
+    }
+    .dropBtn{
+        display: block;
+        border: 3.5px solid white;
+        background-color: transparent;
+        border-radius: 20%;
+        color: transparent;
+        margin: .1rem 1rem .1rem 0;
+    }
+
+    .dropMenu{
+        display: none;
+        float: right;
+        list-style: none;
+        text-align: right;
+        background-color: var(--bgSmall);
+        height: 100vw;
+        padding-left: 3rem;
+        position: sticky;
+        top: 0;
+        z-index: 1500;
+    }
+
+    .dropMenu li{
+        margin-right: 2rem;
+        margin-top: 3.5rem;
+        font-size: 2ch;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .dropMenu li:first-child{
+        margin-top: 2.5rem;
+    }
+
+    .aboutPic{
+        display: none;
+    }
+
+    .aboutText h1, .mapText h1{
+        font-size: 5ch;
+    }
+
+    .aboutText hr, .mapText hr{
+        width: 100%;
+        height: .3rem;
+        background-color: white;
+     }
+     
+     .aboutText p{
+         width: 35rem;
+     }
+
+     .aboutText button, .mapText button{
+         width: max-content;
+         padding: 1rem 4rem;
+         margin-left: 50%;
+         margin-right: 50%;
+     }
+
+     .mapText button{
+        position: relative;
+        right: 12rem;
+     }
+
+     .map{
+         display: flex;
+         flex-direction: column-reverse;
+     }
+
+     .map2{
+         display: none;
+     }
+
+     .map1{
+         position: relative;
+         left: 2rem;
+     }
+
+    #big{
+         display: none;
+     }
+
+    .small{
+         display: block;
+    }
+
+    .small .title{
+        padding-left: 4rem;
+    }
+
+    .small .title h1{
+        font-size: 5ch;
+        text-align: left;
+    }
+
+    .small .title hr{
+        width: 26%;
+        height: .5rem;
+    }
+
+    .col-sm{
+        margin: 0rem 4rem 0rem 4rem;
+        display: flex;
+    }
+    
+    .first{
+        margin-top: 2rem;
+    }
+
+    .small .card{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .small .card:first-of-type{
+        margin-left: 0;
+    }
+
+    .small .card:last-of-type{
+        margin-right: 0;
+    }
+
+    .sysreq{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reqs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .square{
+        margin: 4rem;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
