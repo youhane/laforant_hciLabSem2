@@ -15,7 +15,7 @@ $(function () {
                 currentSlide = 1;
             } else {
                 $(".sliderWrapper").animate({
-                    "margin-left": "-=" + 1550 + "px",
+                    "margin-left": "-=" + slideWidth + "px",
                 },
                     1000
                 );
@@ -27,7 +27,7 @@ $(function () {
         if (currentSlide == 1) currentSlide = slideCount;
         else currentSlide--;
         $(".sliderWrapper").animate({
-            "margin-left": "-" + (currentSlide - 1) * 1550 + "px",
+            "margin-left": "-" + (currentSlide - 1) * slideWidth + "px",
         },
             1000
         );
@@ -39,7 +39,7 @@ $(function () {
         if (currentSlide == slideCount) currentSlide = slideCount;
         else currentSlide++;
         $(".sliderWrapper").animate({
-            "margin-left": "-" + (currentSlide - 1) * 1550 + "px",
+            "margin-left": "-" + (currentSlide - 1) * slideWidth + "px",
         },
             1000
         );
