@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s;
+}
+
+:root{
+    --bgPurple: #2d2f59;
+    --bgSmall: #30314C;;
+    --navPurple: #150240;
+    --textHover: #F2B705;
+    --buttonRed: #610606;
+    --textBtn: #C7C6C6;
+    --slidePurple: #25274F;
+    --cardBg: #494c7e;
+}
+
+.bg-purple{
+    background-color: var(--bgPurple);
+}
