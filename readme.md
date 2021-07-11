@@ -3,6 +3,6 @@ for practice purposes
 
 Home is made with plain HTML, CSS and JS
 
-Maps is currently made with Boostrap, I don't really like it tho
+Maps is made with bootstrap and with slick for the carousel
 
-Going to make the other pages with other libraries
+Going to make the other pages with other front end libraries/frameworks ASAP
