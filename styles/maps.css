@@ -23,3 +23,59 @@
 .bg-purple{
     background-color: var(--bgPurple);
 }
+
+.slideText{
+    background: rgba(196, 196, 196, 0.15);
+    border-radius: 17px;
+    transform: translate(7rem, 5rem);
+    width: 50%;
+    padding: 2rem;
+}
+
+.slide-nav{
+    width: 3% !important;
+}
+
+.subtitle{
+    color: #C4C4C4;
+}
+
+.right{
+    margin-left: 7rem;
+    margin-right: 10rem;
+}
+
+.right h1{
+    border-bottom: .5rem solid white !important;
+}
+
+.right p{
+    font-size: 2.5ch;
+}
+
+.left img{
+    border-radius: 3rem;
+}
+
+.terrain img{
+    background-color: #3B3E75;
+}
+
+@media screen and (max-width: 800px){
+    .slideText{
+        padding: 1rem;
+        width: 50%;
+    }
+
+    .slideText p{
+        font-size: 1ch;
+    }
+
+    .slideText h1{
+        font-size: 1.8ch;
+    }
+
+    .subtitle{
+        font-size: 1.5ch;
+    }
+}
