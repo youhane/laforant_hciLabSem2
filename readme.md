@@ -1,10 +1,15 @@
 # LaForant Web Page
 for practice purposes
 
-Home is made with plain HTML, CSS and JS
+## Pages
 
-Maps is made with Bootstrap5 and with slick for the carousel
+### Home 
+Plain HTML, CSS and JS
 
-Agents is made with TailwindCSS
+### Maps 
+Bootstrap5, slick (carousel) and jquery
+
+### Agents 
+TailwindCSS and jquery
 
 Going to make the other pages with other front end libraries/frameworks ASAP
