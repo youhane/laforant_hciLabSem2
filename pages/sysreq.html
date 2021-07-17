@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laforant | System Requirements</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="../styles/sysreq.css">
+</head>
+
+<body>
+    <nav class="flex">
+        <img src="../assets/logo/logoFul.png" class="hidden 2xl:block">
+        <img src="../assets/logo/logosmol.svg" class="2xl:hidden">
+        <ul class="flex" id="nav-links">
+            <li v-for="link in links">
+                {{ link.link }}
+            </li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <h1>System Requirements</h1>
+    </div>
+
+    <div class="title">
+        <h3>Minimum</h3>
+        <h3>Recommended</h3>
+    </div>
+
+    <div class="table">
+        <table>
+            <h3>Minimum</h3>
+            <h3>Recommended</h3>
+        </table>
+    </div>
+
+    <script src="../script/sysreq.js"></script>
+</body>
+
+</html>

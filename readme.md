@@ -12,4 +12,5 @@ Bootstrap5, slick (carousel) and jquery
 ### Agents 
 TailwindCSS and jquery
 
-Going to make the other pages with other front end libraries/frameworks ASAP
+### System Requirements
+Vue3 and TailwindCSS
