@@ -4,11 +4,11 @@
 
 .sliderWrapper{
     display: flex;
-    width: 383rem;
+    width: max-content;
+    max-width: 400rem;
 }
 
 .slide{
-    width: 400rem;
     display: flex;
     background-color: var(--slidePurple);
     margin: 5rem;
