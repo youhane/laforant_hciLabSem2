@@ -3,5 +3,3 @@ $(function () {
         $(".dropMenu").toggle("fast");
     });
 })
-
-const slide = document.getElementsByClassName("slide")
