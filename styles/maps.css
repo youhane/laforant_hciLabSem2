@@ -20,8 +20,16 @@
     --cardBg: #494c7e;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .bg-purple{
     background-color: var(--bgPurple);
+}
+
+.nav-link:hover{
+    color: var(--textHover) !important;
 }
 
 .slideText{
