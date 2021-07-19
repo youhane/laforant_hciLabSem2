@@ -7,54 +7,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laforant | System Requirements</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/vue@next"></script>
     <link rel="stylesheet" href="../styles/sysreq.css">
 </head>
 
 <body>
     <nav class="flex">
-        <img src="../assets/logo/logoFul.png" class="hidden 2xl:block">
-        <img src="../assets/logo/logosmol.svg" class="2xl:hidden">
-        <ul class="flex" id="nav-links">
-            <li v-for="link in links">
-                {{ link.link }}
-            </li>
+        <img src="../assets/logo/logoFul.png">
+        <img src="../assets/logo/logosmol.svg">
+        <ul class="flex">
+            <li>Home</li>
+            <li>Maps</li>
+            <li>Agents</li>
+            <li>System Requirements</li>
+            <li>Register Now</li>
         </ul>
     </nav>
 
-    <div class="banner">
+    <section class="banner">
         <h1>System Requirements</h1>
-    </div>
+    </section>
 
-    <div class="title">
-        <h3>Minimum</h3>
-        <h3>Recommended</h3>
-    </div>
-
-    <div class="table">
-        <table>
-            <tr>
-                <th></th>
-                <th>Minimal</th>
-                <th>Recommended</th>
-            </tr>
-            <tr id="specs">
-                <td v-for="detail in specs">
-                    {{ detail.detail }}
-                </td>
-            </tr>
-            <tr id="minimal">
-                <td v-for="detail in minimal">
-                    {{ detail.detail }}
-                </td>
-            </tr>
-            <tr id="recommended">
-                <td v-for="detail in recommended">
-                    {{ detail.detail }}
-                </td>
-            </tr>
-        </table>
-    </div>
+    <section>
+        <div class="flex">
+            <h1>Minimum</h1>
+            <h1>Recommended</h1>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td></td>
+                    <td>Minimum</td>
+                    <td>Recommended</td>
+                </tr>
+                <tr>
+                    <td>OS</td>
+                    <td>Windows 7 64 bit</td>
+                    <td>Windows 7 64 bit</td>
+                </tr>
+                <tr>
+                    <td>Processor</td>
+                    <td>Intel Core i3</td>
+                    <td>Intel Core i7</td>
+                </tr>
+                <tr>
+                    <td>Memory</td>
+                    <td>8 GB RAM</td>
+                    <td>16 GB RAM</td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>12GB</td>
+                    <td>20GB</td>
+                </tr>
+                <tr>
+                    <td>Graphics Card</td>
+                    <td>Nwidia MX750</td>
+                    <td>Nwidia RTX2021</td>
+                </tr>
+                <tr>
+                    <td>DirectX</td>
+                    <td>Version 11</td>
+                    <td>Version 20</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>or equivalent</td>
+                    <td>or higher</td>
+                </tr>
+            </table>
+        </div>
+    </section>
 
     <script src="../script/sysreq.js"></script>
 </body>

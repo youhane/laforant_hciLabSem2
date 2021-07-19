@@ -13,4 +13,4 @@ Bootstrap5, slick (carousel) and jquery
 TailwindCSS and jquery
 
 ### System Requirements
-Vue3 and TailwindCSS
+TailwindCSS
