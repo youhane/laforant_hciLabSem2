@@ -34,3 +34,12 @@
   background-repeat: no-repeat;
   height: 75vh;
 }
+
+table tr td{
+  width: 15rem;
+  padding: 1rem;
+}
+
+.text-gray-100{
+  color: rgba(128, 128, 128, 0.438) !important;
+}
