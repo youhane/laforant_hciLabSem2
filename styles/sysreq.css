@@ -43,3 +43,13 @@ table tr td{
 .text-gray-100{
   color: rgba(128, 128, 128, 0.438) !important;
 }
+
+@media screen and (max-width: 800px){
+  .navPurple{
+    background-color: transparent;
+  }
+
+  .banner{
+    height: 30vh;
+  }
+}
