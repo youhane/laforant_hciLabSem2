@@ -14,3 +14,6 @@ TailwindCSS and jquery
 
 ### System Requirements
 TailwindCSS
+
+### Register Now
+Plain HTML, CSS and JS
